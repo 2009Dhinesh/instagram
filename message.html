@@ -1,0 +1,2872 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="icon" type="image/png" href="../Images/login page/insta-fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram • chats</title>
+</head>
+<body id="body" style="overflow-y: scroll;">
+
+    <div class="side_menu chat_site_menu">
+        <div class="side_logo msg_html msgs_html">
+            <a href="index.html"><i class="fa-brands fa-instagram"></i><!--<img src="../Images/login page/instagram-logo.png" alt="Logo" title="Instagram">--></a>
+        </div>
+        <div class="side_menus item1 msg_html">
+            <a href="index.html"><i class="fa-solid fa-house"></i><!--<span>Home</span>--></a>
+        </div>
+        <div class="side_menus item2 msg_html" onclick="searchBox_show()" >
+            <p class="search_cls"><i class="fa-solid fa-magnifying-glass"></i><!--<span>Search</span>--></p>
+        </div>
+        <div class="side_menus item3 msg_html">
+            <a href="explore.html"><i class="fa-regular fa-compass"></i><!--<span>Explore</span>--></a>
+        </div>
+        <div class="side_menus item4 msg_html">
+            <a href="reels.html"><img src="../Images/home page/instagram-reel-1.png" alt="reels icon"><!--<span>Reels</span>--></a>
+        </div>
+        <div class="side_menus item5 msg_html">
+            <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i><!--<span>Messages</span>--></a>
+        </div>
+        <div class="side_menus item6 msg_html" onclick="notification()">
+            <p class="search_cls"><i class="fa-regular fa-heart"></i><!--<span>Notifications</span>--></p>
+        </div>
+        <div class="side_menus item7" onclick="create()">
+            <p class="search_cls"><i class="fa-regular fa-square-plus"></i><!--<span>Create</span>--></p>
+        </div>
+        <div class="side_menus item8 msg_html">
+            <a href="profile.html"><img src="../Images/home page/profile id/my id.jpg" alt="profile logo"><!--<span>Profile</span>--></a>
+        </div>
+        <div class="side_menus item9 msg_html">
+            <a href=""><i class="fa-brands fa-threads"></i><!--<span>Threads</span>--></a>
+        </div>
+        <div class="side_menus item10 msg_html" onclick="more()">
+            <a class="search_cls"><i class="fa-solid fa-bars"></i><!--<span>More</span>--></a>
+        </div>
+    </div>
+
+    <!--****************** side bar content **************-->
+    <div class="search_click_bar" id="search_click_bar">
+        <div class="searchcontent one_search">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search" id="search_box_side"><button class="span_search_icon" onclick="searchBox()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchcontent two_search">
+            <div class="search_txts">
+                <h4>Recent</h4>
+                <a href="">Clear all</a>
+            </div>
+            <div class="search_profile_name">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--****************** Notifications part ********************-->
+    <div class="Notifications" id="notifications">
+        <div class="Notifications_head">
+            Notifications
+        </div>
+        <div class="Notifications_follow">
+            <div class="Notifications_img">
+                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                <div class="Notifications_img_txt">
+                    <h4>Follow requests</h4>
+                    <p>soul1542 + 42 others</p>
+                </div>
+                
+            </div>
+            <div class="Notifications_icon">
+                <p>a</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="Notifications_today">
+            <h3>Today</h3>
+            <div class="Notifications_today_profile">
+                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                <div class="Notifications_today_text">
+                    <p>soul29809</p><span>requested to <br> follow you .</span> <span style="color: #7c7c7c;">1d</span>
+                </div>
+                <div class="Notifications_today_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="Notifications_week">
+            <h3>This week</h3>
+            <div class="Notifications_week_profile">
+                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>barathsj777</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+            <div class="Notifications_week_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>satha_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <img src="../Images/Explore/img11.png" alt="" class="Notifications_week_text_img">
+            </div>
+            <div class="Notifications_week_profile2">
+                <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>_boo_</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Notifications_month">
+            <h3>This month</h3>
+            <div class="Notifications_month_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_month_text">
+                    <p>vijay_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1m</span>
+                </div>
+                <img src="../Images/Explore/img12.png" alt="" class="Notifications_month_text_img">
+            </div>
+        </div>
+    </div>
+    
+    <!--****************** create ********************-->
+    <div class="create_bg" id="create_bg">
+        <i class="fa-solid fa-xmark" onclick="create_bg_x()"></i>
+    <div class="create">
+        <div class="create_head">
+            Create new post
+        </div>
+        <div class="create_content">
+            <img src="../Images/home page/craete_img.png" alt="">
+            <p>Drag photos and videos here</p>
+
+            <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)"/>
+            <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Select from computer"/>
+            
+        </div>
+        </div>
+    </div>
+
+    <!--****************** more ********************-->
+    <div class="more" id="more">
+        <div class="more1">
+            <div class="more_span1 more_hover">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+            </div>
+            <div class="more_span2 more_hover">
+                <i class="fa-solid fa-chart-line"></i><span>Your activity</span>
+            </div>
+            <div class="more_span3 more_hover">
+                <i class="fa-regular fa-bookmark"></i><span>Saved</span>
+            </div>
+            <div class="more_span4 more_hover">
+                <i class="fa-regular fa-sun"></i><span>Switch appearance</span>
+            </div>
+            <div class="more_span5 more_hover">
+                <i class="fa-solid fa-circle-exclamation"></i><span>Report a problem</span>
+            </div>
+        </div>
+        <div class="more2">
+            <div class="more2_span1 more_hover">
+                <span>Switch accounts</span>
+            </div>
+            <div class="more2_span2 more_hover">
+                <span>Log out</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ***************** comments ************************ -->
+    <div class="chats">
+        <div class="chats_name">
+            <h2>dhinesh_143_17 <i class="fa-solid fa-chevron-down"></i></h2>
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+        <div class="chats_notes">
+            <div class="chats_notes1">
+                <img src="../Images/home page/profile id/my id.jpg" alt=""> <br>
+                <span>Your note</span>
+                <div class="notes">
+                    <img src="../Images/chat/notes_img.png" alt="">
+                    <input type="text" placeholder="Note...">
+                    <div class="notes_icon">
+                        <i class="fa-solid fa-sort-up"></i>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chats_text">
+            <div class="chats_text_head">
+                <h4>Message</h4>
+                <a href="">Requests</a>
+            </div>
+
+            <div class="chats_history" >
+
+                <div class="chats_history1" onclick="chats_history()">
+                    <img src="../Images/home page/profile id/partha id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>பார்த்தீஸ்வரன்🪐🪄</p>
+                        <p class="chats_history1_name_profile">பார்த்தீஸ்வரன்🪐🪄 sent to attachment<span>•</span><span>1h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+                <div class="chats_history1" onclick="chats_history1()">
+                    <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                    <div class="chats_history1_name">
+                        <p>கவியின் காதலன் ✨</p>
+                        <p class="chats_history1_name_profile">கவியின் காதலன் ✨ sent to attachment<span>•</span><span>5h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+                
+                <div class="chats_history1" onclick="chats_history2()">
+                    <img src="../Images/home page/profile id/praveen id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>ρяανєєи кυмαя ❣️</p>
+                        <p class="chats_history1_name_profile">ρяανєєи кυмαя ❣️ sent to attachment<span>•</span><span>5h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history3()">
+                    <img src="../Images/home page/profile id/sarith id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>hey it'z🪄@𝐒𝐚𝐭𝐡𝐚_🖤🤍🎀</p>
+                        <p class="chats_history1_name_profile">hey it'z🪄@𝐒𝐚𝐭𝐡𝐚_🖤🤍🎀 sent to attachment<span>•</span><span>5h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history4()">
+                    <img src="../Images/home page/profile id/hari id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>🤍 ♛ ʜᴀʀɪ ♛ 🤍</p>
+                        <p class="chats_history1_name_profile">🤍 ♛ ʜᴀʀɪ ♛ 🤍 sent to attachment<span>•</span><span>6h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history5()">
+                    <img src="../Images/home page/profile id/ragu id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>𝗥𝗼𝗹𝗲𝘅 :⁠->😈</p>
+                        <p class="chats_history1_name_profile">𝗥𝗼𝗹𝗲𝘅 :⁠->😈 sent to attachment<span>•</span><span>6h</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history6()">
+                    <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>its_sakthiii_</p>
+                        <p class="chats_history1_name_profile">its_sakthiii_ sent to attachment<span>•</span><span>1d</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history7()">
+                    <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                    <div class="chats_history1_name">
+                        <p>Sudharth Kumar</p>
+                        <p class="chats_history1_name_profile">Sudharth Kumar sent to attachment<span>•</span><span>1d</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history8()">
+                    <img src="../Images/home page/profile id/azar id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>𝘼 𝙕 𝘼 𝙍...🚀❗💥</p>
+                        <p class="chats_history1_name_profile">𝘼 𝙕 𝘼 𝙍...🚀❗💥 sent to attachment<span>•</span><span>2d</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="chats_history1" onclick="chats_history9()">
+                    <img src="../Images/home page/profile id/azar id.png" alt="">
+                    <div class="chats_history1_name">
+                        <p>Muthu pandi</p>
+                        <p class="chats_history1_name_profile">Muthu pandi sent to attachment<span>•</span><span>2d</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+                
+                <div class="chats_history1" onclick="chats_history10()">
+                    <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                    <div class="chats_history1_name">
+                        <p>ABU👾</p>
+                        <p class="chats_history1_name_profile">ABU👾 sent to attachment<span>•</span><span>2d</span></p>
+                    </div>
+                    <div class="chats_history1_icon">
+                        <!-- <i class="fa-regular fa-bell-slash"></i> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--*** chat message text*** -->
+        <!-- partha id -->
+    <div class="click_chat_message" id="click_chat_message_text_content1">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/partha id.png" alt="">
+                <p>பார்த்தீஸ்வரன்🪐🪄</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels11.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels10.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        
+                        <!-- <img src="../Images/home page/profile id/partha id.png" alt=""> -->
+                        <!-- <video src="../videos/Explore/Explore1.mp4"></video> -->
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/partha/imgs/img3.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        25 Nov 2024, 12:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 9:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="">
+                        <video src="../videos/Explore/Explore1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 10:28
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/reels/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        
+                        <!-- <img src="../Images/home page/profile id/partha id.png" alt=""> -->
+                        <!-- <video src="../videos/Explore/Explore1.mp4"></video> -->
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/partha id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/partha/imgs/img2.webp" alt="" >
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels11.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+
+                <div class="click_chat_message_text_content_lastSeen">
+                    Seen 1h ago
+                </div>
+            </div>
+        </div>
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+
+        <!-- ***********dinesh id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content2">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                <p>கவியின் காதலன் ✨</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels10.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        
+                        <!-- <img src="../Images/home page/profile id/dinesh id.jpg" alt=""> -->
+                        <!-- <video src="../videos/Explore/Explore1.mp4"></video> -->
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        25 Nov 2024, 12:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 9:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="">
+                        <video src="../videos/Explore/Explore1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 10:28
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/reels/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        
+                        <!-- <img src="../Images/home page/profile id/dinesh id.jpg" alt=""> -->
+                        <!-- <video src="../videos/Explore/Explore1.mp4"></video> -->
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/dinesh id.jpg" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img2.heic" alt="" >
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+
+                <div class="click_chat_message_text_content_lastSeen">
+                    Seen 1h ago
+                </div>
+            </div>
+        </div>
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********praveen id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content3">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/praveen id.png" alt="">
+                <p class="praveen_name">ρяανєєи кυмαя ❣️</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        25 Nov 2024, 12:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 9:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/praveen id.png" alt="">
+                        <video src="../videos/Explore/Explore1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 10:28
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/reels/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+
+                <div class="click_chat_message_text_content_lastSeen">
+                    Seen 1h ago
+                </div>
+            </div>
+        </div>
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+
+        <!-- ***********satha id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content4">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/sarith id.png" alt="">
+                <p class="praveen_name">hey it'z🪄@𝐒𝐚𝐭𝐡𝐚_🖤🤍🎀</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels10.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        25 Nov 2024, 12:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 9:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="">
+                        <video src="../videos/Explore/Explore1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sarith id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img2.heic" alt="" >
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+        
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+
+        <!-- ***********hari id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content5">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/hari id.png" alt="">
+                <p class="praveen_name">🤍 ♛ ʜᴀʀɪ ♛ 🤍</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/hari id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/partha/videos/reels10.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/hari id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/hari id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/hari id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/hari id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********ragu id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content6">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/ragu id.png" alt="">
+                <p class="praveen_name">𝗥𝗼𝗹𝗲𝘅 :⁠->😈</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/ragu id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img2.heic" alt="" >
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********sakthi id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content7">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                <p class="praveen_name">its_sakthiii_</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        28 Nov 2024, 9:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sakthi id.png" alt="">
+                        <video src="../videos/Explore/Explore1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********sundhara vel id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content8">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                <p class="praveen_name">Sudharth Kumar</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        25 Nov 2024, 12:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels1.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sundharavel id.jpg" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img2.heic" alt="" >
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********azar id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content9">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/azar id.png" alt="">
+                <p class="praveen_name">𝘼 𝙕 𝘼 𝙍...🚀❗💥</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********muthu id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content10">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/azar id.png" alt="">
+                <p class="praveen_name">Muthu pandi</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        19 Nov 2024, 3:56
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels4.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/azar id.png" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+        <!-- ***********ABU👾 id**************** -->
+    
+
+    <div class="click_chat_message" id="click_chat_message_text_content11">
+        <div class="click_chat_message_head">
+            <div class="click_chat_message_head_img">
+                <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                <p class="praveen_name">ABU👾</p>
+            </div>
+            <div class="click_chat_message_head_icon">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div>
+
+        <div class="click_chat_message_text" >
+            <div class="click_chat_message_text_content1" >
+                
+                
+                <div class="click_chat_message_text_content_left" >
+                    <div class="click_chat_message_text_content_time">
+                        8 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                        <video src="../videos/chat_reels/partha/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 12:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels9.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        16 Nov 2024, 02:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels8.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels7.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 01:20
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels6.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        18 Nov 2024, 08:59
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels5.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        20 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="">
+                        <video src="../videos/chat_reels/dhinesh/videos/reels3.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_right">
+                    <div class="click_chat_message_text_content_time">
+                        21 Nov 2024, 04:50
+                    </div>
+                    <div class="click_chat_message_text_content_right_video">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <video src="../videos/chat_reels/dhinesh/videos/reels2.mp4"></video>
+                    </div>
+                    <div class="click_chat_message_text_content_right_img">
+
+                    </div>
+                    <div class="click_chat_message_text_content_right_text">
+
+                    </div>
+                </div>
+                
+                <div class="click_chat_message_text_content_left">
+                    <div class="click_chat_message_text_content_time">
+                        24 Nov 2024, 08:17
+                    </div>
+                    <div class="click_chat_message_text_content_left_video">
+                    </div>
+                    <div class="click_chat_message_text_content_left_img">
+                        <i class="fa-regular fa-face-smile" title="React"></i>
+                        <i class="fa-solid fa-reply" title="Reply"></i>
+                        <img src="../Images/home page/profile id/sithik id.webp" alt="" class="click_chat_message_text_content_left_img_1">
+                        <img src="../videos/chat_reels/dhinesh/imgs/img1.webp" alt="" >
+                        
+                    </div>
+                    <div class="click_chat_message_text_content_left_text">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+
+        <div class="click_chat_message_input">
+            <i class="fa-solid fa-face-smile click_chat_message_input_icon1" ></i>
+            <input type="text" placeholder="Message...">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../Script/script.js"></script>
+    
+
+</body>
+</html>

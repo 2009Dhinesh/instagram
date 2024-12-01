@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="icon" type="image/png" href="../Images/login page/insta-fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram • Explore</title>
+</head>
+<body id="body" style="overflow-y: scroll;">
+
+    <div class="side_menu">
+        <div class="side_logo">
+            <a href="index.html"><img src="../Images/login page/instagram-logo.png" alt="Logo" title="Instagram"></a>
+        </div>
+        <div class="side_menus item1">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <div class="side_menus item2" onclick="searchBox_show()" >
+            <p class="search_cls"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></p>
+        </div>
+        <div class="side_menus item3">
+            <a href="explore.html"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+        </div>
+        <div class="side_menus item4">
+            <a href="reels.html"><img src="../Images/home page/instagram-reel-1.png" alt="reels icon"><span>Reels</span></a>
+        </div>
+        <div class="side_menus item5">
+            <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i><span>Messages</span></a>
+        </div>
+        <div class="side_menus item6" onclick="notification()">
+            <p class="search_cls"><i class="fa-regular fa-heart"></i><span>Notifications</span></p>
+        </div>
+        <div class="side_menus item7" onclick="create()">
+            <p class="search_cls"><i class="fa-regular fa-square-plus"></i><span>Create</span></p>
+        </div>
+        <div class="side_menus item8">
+            <a href="profile.html"><img src="../Images/home page/profile id/my id.jpg" alt="profile logo"><span>Profile</span></a>
+        </div>
+        <div class="side_menus item9">
+            <a href=""><i class="fa-brands fa-threads"></i><span>Threads</span></a>
+        </div>
+        <div class="side_menus item10" onclick="more()">
+            <p class="search_cls"><i class="fa-solid fa-bars"></i><span>More</span></p>
+        </div>
+    </div>
+
+    <!--****************** side bar content **************-->
+    <div class="search_click_bar" id="search_click_bar">
+        <div class="searchcontent one_search">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search" id="search_box_side"><button class="span_search_icon" onclick="searchBox()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchcontent two_search">
+            <div class="search_txts">
+                <h4>Recent</h4>
+                <a href="">Clear all</a>
+            </div>
+            <div class="search_profile_name">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--****************** Notifications part ********************-->
+    <div class="Notifications" id="notifications">
+        <div class="Notifications_head">
+            Notifications
+        </div>
+        <div class="Notifications_follow">
+            <div class="Notifications_img">
+                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                <div class="Notifications_img_txt">
+                    <h4>Follow requests</h4>
+                    <p>soul1542 + 42 others</p>
+                </div>
+                
+            </div>
+            <div class="Notifications_icon">
+                <p>a</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="Notifications_today">
+            <h3>Today</h3>
+            <div class="Notifications_today_profile">
+                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                <div class="Notifications_today_text">
+                    <p>soul29809</p><span>requested to <br> follow you .</span> <span style="color: #7c7c7c;">1d</span>
+                </div>
+                <div class="Notifications_today_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="Notifications_week">
+            <h3>This week</h3>
+            <div class="Notifications_week_profile">
+                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>barathsj777</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+            <div class="Notifications_week_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>satha_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <img src="../Images/Explore/img11.png" alt="" class="Notifications_week_text_img">
+            </div>
+            <div class="Notifications_week_profile2">
+                <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>_boo_</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Notifications_month">
+            <h3>This month</h3>
+            <div class="Notifications_month_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_month_text">
+                    <p>vijay_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1m</span>
+                </div>
+                <img src="../Images/Explore/img12.png" alt="" class="Notifications_month_text_img">
+            </div>
+        </div>
+    </div>
+
+    <!--****************** create ********************-->
+    <div class="create_bg" id="create_bg">
+        <i class="fa-solid fa-xmark" onclick="create_bg_x()"></i>
+    <div class="create">
+        <div class="create_head">
+            Create new post
+        </div>
+        <div class="create_content">
+            <img src="../Images/home page/craete_img.png" alt="">
+            <p>Drag photos and videos here</p>
+
+            <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)"/>
+            <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Select from computer"/>
+            
+        </div>
+        </div>
+    </div>
+
+    <!--****************** more ********************-->
+    <div class="more" id="more">
+        <div class="more1">
+            <div class="more_span1 more_hover">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+            </div>
+            <div class="more_span2 more_hover">
+                <i class="fa-solid fa-chart-line"></i><span>Your activity</span>
+            </div>
+            <div class="more_span3 more_hover">
+                <i class="fa-regular fa-bookmark"></i><span>Saved</span>
+            </div>
+            <div class="more_span4 more_hover">
+                <i class="fa-regular fa-sun"></i><span>Switch appearance</span>
+            </div>
+            <div class="more_span5 more_hover">
+                <i class="fa-solid fa-circle-exclamation"></i><span>Report a problem</span>
+            </div>
+        </div>
+        <div class="more2">
+            <div class="more2_span1 more_hover">
+                <span>Switch accounts</span>
+            </div>
+            <div class="more2_span2 more_hover">
+                <span>Log out</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- *****************Explore************************ -->
+    <div class="Explore">
+            <div class="Explore_video1">
+                <div class="video1">
+                    <img src="../Images/Explore/img1.png" onclick="img1()"></img>
+                    <img src="../Images/Explore/img2.png" onclick="img2()"></img>
+                </div>
+                <div class="video2">
+                    <img src="../Images/Explore/img3.png" onclick="img3()"></img>
+                    <img src="../Images/Explore/img4.png" onclick="img4()"></img>
+                </div>
+                <img src="../Images/Explore/img5.png" class="video_five" onclick="img5()"></img>
+            </div>
+            <div class="Explore_video2">
+                <img src="../Images/Explore/img6.png"></img>
+                <div class="video1 video_sixs">
+                    <img src="../Images/Explore/img7.png"></img>
+                    <img src="../Images/Explore/img8.png"></img>
+                </div>
+                <div class="video2 video_six">
+                    <img src="../Images/Explore/img9.png"></img>
+                    <img src="../Images/Explore/img10.png"></img>
+                </div>
+            </div>
+
+            <div class="Explore_video3">
+                <div class="video1">
+                    <img src="../Images/Explore/img11.png"></img>
+                    <img src="../Images/Explore/img12.png"></img>
+                </div>
+                <div class="video2">
+                    <img src="../Images/Explore/img13.png"></img>
+                    <img src="../Images/Explore/img14.png"></img>
+                </div>
+                <img src="../Images/Explore/img15.png" class="video_five"></img>
+            </div>
+        </div>
+            <!-- Explore videos -->
+            <div class="Explore_comment1" id="Explore_comment1">
+                <div class="xmark">
+                    <i class="fa-solid fa-xmark" onclick="Xmark()"></i>
+                </div>
+                <div class="explore">
+                    <div class="Explore_id">
+                        <video src="../videos/Explore/Explore1.mp4" autoplay loop id="Explore_comment1_video"></video>
+                    </div>
+                
+                    <div class="Explore_comment_text">
+                        <div class="Explore_comment_part_text">
+                            <img src="../Images/Explore/img1.png" alt="logo">
+                            <b>priyanka_niraa</b> <span>•</span><span style="color: #00aaff; font-weight: bold;margin-left: 3%;">Follow</span>
+                            <p>Kevin MacLeod, Kevin•Monkeys Spinning Monkeys</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="Explore_message">
+                        <div class="Explore_message1">
+                            <img src="../Images/Explore/img1.png" alt="logo">
+                            <b>priyanka_niraa</b> <p class="msg">Nhi karna mujhe koi hairstyle mumma🧿😂♥️🪬… </p>
+                            <p>.. <br> .. <br>|| princess Nira, beautiful daughter, beautiful face, cuteness overload, funny videos everyday, learning new things, language skills, tips for baby girl, baby girl, happiness, happy baby girl, ||
+                                …</p>
+                                <a href="">#nira #viralaccount #instafashion #babyinfluencer #babygirl </a>
+                                <a href="">#reelsinstagram #happiness #funnyvideos #hairstyles</a> <br>
+                            <strong>2w</strong>
+                        </div>
+                        <div class="Explore_message2">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="logo">
+                                <b>jassgoindwalia❤️😂</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">1 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message3">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment2.jpg" alt="logo">
+                                <b>pujarastogi360😍😍😍</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">6 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message4">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>coco_khani😍❤️❤️❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message5">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>Labrador was friendly always ❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Explore_icon">
+                        <div class="like_icons">
+                            <div class="link_icons_one">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="link_icons_two">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <p>672983 likes</p>
+                        <span>1 month ago</span>
+                        <div class="part1_searchs">
+                            <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Explore_comment2 -->
+            <div class="Explore_comment2" id="Explore_comment2">
+                <div class="xmark">
+                    <i class="fa-solid fa-xmark" onclick="Xmark1()"></i>
+                </div>
+                <div class="explore">
+                    <div class="Explore_id">
+                        <img src="../videos/Explore/Explore2.webp" alt="">
+                    </div>
+                
+                    <div class="Explore_comment_text">
+                        <div class="Explore_comment_part_text">
+                            <img src="../Images/Explore/img2.png" alt="logo">
+                            <b>ammu_kutty_809</b> <span>•</span><span style="color: #00aaff; font-weight: bold;margin-left: 3%;">Follow</span>
+                            <p class="ammu_audio">Original audio</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="Explore_message">
+                        <div class="Explore_message1">
+                            <img src="../Images/Explore/img2.png" alt="logo">
+                            <b>ammu_kutty_809</b> <p class="msg">💙🖤🌎 </p>
+                            <p>.. <br> .. <br>|| princess Nira, beautiful daughter, beautiful face, cuteness overload, funny videos everyday, learning new things, language skills, tips for baby girl, baby girl, happiness, happy baby girl, ||
+                                …</p>
+                                <a href="">#nira #viralaccount #instafashion #babyinfluencer #babygirl </a>
+                                <a href="">#reelsinstagram #happiness #funnyvideos #hairstyles</a> <br>
+                            <strong>4w</strong>
+                        </div>
+                        <div class="Explore_message2">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>How cute Samantha and her expressions are ...❤️❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message3">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment4.jpg" alt="logo">
+                                <b>coco_khani😍❤️❤️❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">3 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message4">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="logo">
+                                <b>sathana3.1😍❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message5">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>How cute Samantha and her expressions are ... Created a new trend in Honeymoons❤️ ❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Explore_icon">
+                        <div class="like_icons">
+                            <div class="link_icons_one">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="link_icons_two">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <p>6929830 likes</p>
+                        <span>2 month ago</span>
+                        <div class="part1_searchs">
+                            <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Explore_comment3 -->
+            <div class="Explore_comment3" id="Explore_comment3">
+                <div class="xmark">
+                    <i class="fa-solid fa-xmark" onclick="Xmark2()"></i>
+                </div>
+                <div class="explore">
+                    <div class="Explore_id">
+                        <video src="../videos/Explore/Explore3.mp4" autoplay loop id="Explore_comment3_video"></video>
+                    </div>
+                
+                    <div class="Explore_comment_text">
+                        <div class="Explore_comment_part_text">
+                            <img src="../Images/Explore/img3.png" alt="logo">
+                            <b>ammu_kutty_809</b> <span>•</span><span style="color: #00aaff; font-weight: bold;margin-left: 3%;">Follow</span>
+                            <p class="ammu_audio">Original audio</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="Explore_message">
+                        <div class="Explore_message1">
+                            <img src="../Images/Explore/img3.png" alt="logo">
+                            <b>ammu_kutty_809</b> <p class="msg">💙🖤🌎 </p>
+                            <p>.. <br> .. <br>|| princess Nira, beautiful daughter, beautiful face, cuteness overload, funny videos everyday, learning new things, language skills, tips for baby girl, baby girl, happiness, happy baby girl, ||
+                                …</p>
+                                <a href="">#nira #viralaccount #instafashion #babyinfluencer #babygirl </a>
+                                <a href="">#reelsinstagram #happiness #funnyvideos #hairstyles</a> <br>
+                            <strong>4w</strong>
+                        </div>
+                        <div class="Explore_message2">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>How cute Samantha and her expressions are ...❤️❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message3">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment4.jpg" alt="logo">
+                                <b>coco_khani😍❤️❤️❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">3 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message4">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="logo">
+                                <b>sathana3.1😍❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message5">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>How cute Samantha and her expressions are ... Created a new trend in Honeymoons❤️ ❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Explore_icon">
+                        <div class="like_icons">
+                            <div class="link_icons_one">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="link_icons_two">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <p>6929830 likes</p>
+                        <span>2 month ago</span>
+                        <div class="part1_searchs">
+                            <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Explore_comment4 -->
+            <div class="Explore_comment4" id="Explore_comment4">
+                <div class="xmark">
+                    <i class="fa-solid fa-xmark" onclick="Xmark3()"></i>
+                </div>
+                <div class="explore">
+                    <div class="Explore_id">
+                        <video src="../videos/Explore/Explore4.mp4" autoplay loop id="Explore_comment3_video"></video>
+                    </div>
+                
+                    <div class="Explore_comment_text">
+                        <div class="Explore_comment_part_text">
+                            <img src="../Images/Explore/img4.png" alt="logo">
+                            <b>thanioruvan_nan</b>  <span>•</span><span style="color: #00aaff; font-weight: bold;margin-left: 3%;">Follow</span>
+                            <p class="ammu_audio">Original audio</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="Explore_message">
+                        <div class="Explore_message1">
+                            <img src="../Images/Explore/img4.png" alt="logo">
+                            <b>thanioruvan_naan_</b>  <p class="msg">💙🖤🌎 </p>
+                            <p>.. <br> .. <br>.. <br>.. <br>.. <br>
+                                …</p>
+                                <a href="">#nira #viralaccount #instafashion #babyinfluencer #babygirl </a>
+                                <a href="">#reelsinstagram #happiness #funnyvideos #hairstyles</a> <br>
+                            <strong>4w</strong>
+                        </div>
+                        <div class="Explore_message2">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment6.jpg" alt="logo">
+                                <b>_bee_ <span>❤️❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message3">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment7.jpg" alt="logo">
+                                <b>_khani😍❤️❤️❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">3 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message4">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="logo">
+                                <b>satha😍❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message5">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="logo">
+                                <b>_bee_biya_ <span>How cute Samantha and her expressions are ... Created a new trend in Honeymoons❤️ ❤️🙌</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Explore_icon">
+                        <div class="like_icons">
+                            <div class="link_icons_one">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="link_icons_two">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <p>6929830 likes</p>
+                        <span>2 month ago</span>
+                        <div class="part1_searchs">
+                            <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Explore_comment5 -->
+            <div class="Explore_comment5" id="Explore_comment5">
+                <div class="xmark">
+                    <i class="fa-solid fa-xmark" onclick="Xmark4()"></i>
+                </div>
+                <div class="explore">
+                    <div class="Explore_id">
+                        <video src="../videos/Explore/Explore5.mp4" autoplay loop id="Explore_comment3_video"></video>
+                    </div>
+                
+                    <div class="Explore_comment_text">
+                        <div class="Explore_comment_part_text">
+                            <img src="../Images/Explore/img5.png" alt="logo">
+                            <b>thanioruvan_nan</b>  <span>•</span><span style="color: #00aaff; font-weight: bold;margin-left: 3%;">Follow</span>
+                            <p class="ammu_audio">Original audio</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="Explore_message">
+                        <div class="Explore_message1">
+                            <img src="../Images/Explore/img5.png" alt="logo">
+                            <b>thanioruvan_naan_</b>  <p class="msg">💙🖤🌎 </p>
+                            <p>.. <br> .. <br>.. <br>.. <br>.. <br>
+                                …</p>
+                                <a href="">#reelsinstagram #reelkarofeelkaro #reelsindia #reelsviral</a>
+                                <a href=""> #reelsinsta #sivakarthikeyan #saipallavi #amaran</a> <br>
+                            <strong>4w</strong>
+                        </div>
+                        <div class="Explore_message2">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment12.jpg" alt="logo">
+                                <b>akhila.17009<span>Long distance relationship ... Miss you❤️🔥</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message3">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment11.jpg" alt="logo">
+                                <b>i__am__riyadas😍❤️❤️❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">3 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message4">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment13.jpg" alt="logo">
+                                <b>jananisivalingam_😍❤️</b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">7 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="Explore_message5">
+                            <div class="Explore_message2_part1">
+                                <img src="../Images/Explore/message_img/img1_comment13.jpg" alt="logo">
+                                <b>akhila.17009<span>Long distance relationship.....😢❤️every time every minute every second... Miss you❤️🔥</span></b>
+                                <div class="Explore_message2_part1_link">
+                                    <a href="">1w</a>
+                                    <a href="">17 like</a>
+                                    <a href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="Explore_message2_part2">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Explore_icon">
+                        <div class="like_icons">
+                            <div class="link_icons_one">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="link_icons_two">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <p>6929830 likes</p>
+                        <span>2 month ago</span>
+                        <div class="part1_searchs">
+                            <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+    <script src="../Script/script.js"></script>
+    
+
+</body>
+</html>

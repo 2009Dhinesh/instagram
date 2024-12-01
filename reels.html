@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="icon" type="image/png" href="../Images/login page/insta-fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram • Reels</title>
+</head>
+<body id="body" style="overflow-y: scroll;">
+
+    <div class="side_menu">
+        <div class="side_logo">
+            <a href="index.html"><img src="../Images/login page/instagram-logo.png" alt="Logo" title="Instagram"></a>
+        </div>
+        <div class="side_menus item1">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <div class="side_menus item2" onclick="searchBox_show()" >
+            <p class="search_cls"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></p>
+        </div>
+        <div class="side_menus item3">
+            <a href="explore.html"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+        </div>
+        <div class="side_menus item4">
+            <a href="reels.html"><img src="../Images/home page/instagram-reel-1.png" alt="reels icon"><span>Reels</span></a>
+        </div>
+        <div class="side_menus item5">
+            <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i><span>Messages</span></a>
+        </div>
+        <div class="side_menus item6" onclick="notification()">
+            <p class="search_cls"><i class="fa-regular fa-heart"></i><span>Notifications</span></p>
+        </div>
+        <div class="side_menus item7" onclick="create()">
+            <p class="search_cls"><i class="fa-regular fa-square-plus"></i><span>Create</span></p>
+        </div>
+        <div class="side_menus item8">
+            <a href="profile.html"><img src="../Images/home page/profile id/my id.jpg" alt="profile logo"><span>Profile</span></a>
+        </div>
+        <div class="side_menus item9">
+            <a href=""><i class="fa-brands fa-threads"></i><span>Threads</span></a>
+        </div>
+        <div class="side_menus item10" onclick="more()">
+            <p class="search_cls"><i class="fa-solid fa-bars"></i><span>More</span></p>
+        </div>
+    </div>
+
+
+    <!--****************** side bar content **************-->
+    <div class="search_click_bar" id="search_click_bar">
+        <div class="searchcontent one_search">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search" id="search_box_side"><button class="span_search_icon" onclick="searchBox()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchcontent two_search">
+            <div class="search_txts">
+                <h4>Recent</h4>
+                <a href="">Clear all</a>
+            </div>
+            <div class="search_profile_name">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--****************** Notifications part ********************-->
+    <div class="Notifications" id="notifications">
+        <div class="Notifications_head">
+            Notifications
+        </div>
+        <div class="Notifications_follow">
+            <div class="Notifications_img">
+                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                <div class="Notifications_img_txt">
+                    <h4>Follow requests</h4>
+                    <p>soul1542 + 42 others</p>
+                </div>
+                
+            </div>
+            <div class="Notifications_icon">
+                <p>a</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="Notifications_today">
+            <h3>Today</h3>
+            <div class="Notifications_today_profile">
+                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                <div class="Notifications_today_text">
+                    <p>soul29809</p><span>requested to <br> follow you .</span> <span style="color: #7c7c7c;">1d</span>
+                </div>
+                <div class="Notifications_today_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="Notifications_week">
+            <h3>This week</h3>
+            <div class="Notifications_week_profile">
+                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>barathsj777</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+            <div class="Notifications_week_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>satha_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <img src="../Images/Explore/img11.png" alt="" class="Notifications_week_text_img">
+            </div>
+            <div class="Notifications_week_profile2">
+                <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>_boo_</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Notifications_month">
+            <h3>This month</h3>
+            <div class="Notifications_month_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_month_text">
+                    <p>vijay_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1m</span>
+                </div>
+                <img src="../Images/Explore/img12.png" alt="" class="Notifications_month_text_img">
+            </div>
+        </div>
+    </div>
+
+    <!--****************** create ********************-->
+    <div class="create_bg" id="create_bg">
+        <i class="fa-solid fa-xmark" onclick="create_bg_x()"></i>
+    <div class="create">
+        <div class="create_head">
+            Create new post
+        </div>
+        <div class="create_content">
+            <img src="../Images/home page/craete_img.png" alt="">
+            <p>Drag photos and videos here</p>
+
+            <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)"/>
+            <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Select from computer"/>
+            
+        </div>
+        </div>
+    </div>
+
+    <!--****************** more ********************-->
+    <div class="more" id="more">
+        <div class="more1">
+            <div class="more_span1 more_hover">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+            </div>
+            <div class="more_span2 more_hover">
+                <i class="fa-solid fa-chart-line"></i><span>Your activity</span>
+            </div>
+            <div class="more_span3 more_hover">
+                <i class="fa-regular fa-bookmark"></i><span>Saved</span>
+            </div>
+            <div class="more_span4 more_hover">
+                <i class="fa-regular fa-sun"></i><span>Switch appearance</span>
+            </div>
+            <div class="more_span5 more_hover">
+                <i class="fa-solid fa-circle-exclamation"></i><span>Report a problem</span>
+            </div>
+        </div>
+        <div class="more2">
+            <div class="more2_span1 more_hover">
+                <span>Switch accounts</span>
+            </div>
+            <div class="more2_span2 more_hover">
+                <span>Log out</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ***************** Reels ************************ -->
+    <div class="reels">
+        <div class="reels1">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/Explore/Explore6.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                        <div class="profile_text">feeling_addict_•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        She is saree 😍💙💝
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px">G. V. Prakash, Sinduri Vishal, Uma Devi · Minikki Minikkish, Sinduri Vishal, Uma Devi · Minikki Minikki</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>2.2 k</span></i>
+                <i class="fa-regular fa-comment"><span>250</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels2">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/Explore/Explore9.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment2.jpg" alt="">
+                        <div class="profile_text">_crazykadhali_•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        Promotion available more details 👇🏻… more
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px">subhu_the_.lab · Original audio   subhu_the_.lab · Original audio</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>5 k</span></i>
+                <i class="fa-regular fa-comment"><span>1250</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment2.jpg" alt="">
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <div class="reels3">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/Explore/Explore7.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                        <div class="profile_text">vibes__for_you•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        She is so cute 😍💙💝
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >vibes__for_you · Original audio</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>9 k</span></i>
+                <i class="fa-regular fa-comment"><span>2 k</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels4">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels4.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment4.jpg" alt="">
+                        <div class="profile_text">veera_love_bgm•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        Mention....!! 💞😻
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >titanic_couple07 · Original audio    titanic_couple07 · Original audio</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>6 k</span></i>
+                <i class="fa-regular fa-comment"><span>3 k</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels5">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels5.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                        <div class="profile_text">_.king._of._kd_gamer•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        Distance luvv 3...!! 🤌❤🥺✨...
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >vibes__for_you · Original audio</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>3k</span></i>
+                <i class="fa-regular fa-comment"><span>1008</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels6">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels6.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment6.jpg" alt="">
+                        <div class="profile_text">jamuna__edit•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        🌍💙🖇️😘🥰✨...
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >Harris Jayaraj,arris Jayaraj, Unnikrishnan, Chinmayi, Mega · Vaarayo Vaarayo </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>9k</span></i>
+                <i class="fa-regular fa-comment"><span>2k</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels7">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels7.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment7.jpg" alt="">
+                        <div class="profile_text">gk__couple•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        🥲Tag ( Ur ) Partner 🤣😅...
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >· Beer Song Dhibu Ninan Thomas, Gana Guna, Rokesh</marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>4k</span></i>
+                <i class="fa-regular fa-comment"><span>500</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels8">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels8.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                        <div class="profile_text">jira.baby08•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        Bhoooo🙈❤️....
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >ira.baby08 · Original audio </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>3.3k</span></i>
+                <i class="fa-regular fa-comment"><span>2.2k</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels9">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels9.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                        <div class="profile_text">_.kunssuhh._•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                        Tag ur💗✨...
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >_.kunssuhh._ · Original audio </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>6.5k</span></i>
+                <i class="fa-regular fa-comment"><span>2.5k</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reels10">
+            <div class="reels_videos1">
+                <div class="reels_video">
+                    <video src="../videos/reels/reels10.mp4" autoplay loop></video>
+                    <div class="reels_mute_icon">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile_name">
+                        <img src="../Images/Explore/message_img/img1_comment10.jpg" alt="">
+                        <div class="profile_text">my_life_my_love_siser•<span>Follow</span></div>
+                    </div>
+                    <div class="profile_decription">
+                    </div>
+                    <div class="profile_music">
+                        <i class="fa-solid fa-music"></i><marquee behavior="scroll" direction="left" width="70%" height="50px" >my_love_siser · Original audiomy_life_my_love_siser · </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="reels_icon">
+                <i class="fa-regular fa-heart"><span>900</span></i>
+                <i class="fa-regular fa-comment"><span>50</span></i>
+                <i class="fa-regular fa-paper-plane"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="reels_icon_img">
+                    <img src="../Images/Explore/message_img/img1_comment10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="../Script/script.js"></script>
+    
+
+</body>
+</html>

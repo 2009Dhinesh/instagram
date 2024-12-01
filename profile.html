@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="icon" type="image/png" href="../Images/login page/insta-fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram • Profile</title>
+</head>
+<body id="body" style="overflow-y: scroll;">
+
+    <div class="side_menu">
+        <div class="side_logo">
+            <a href="index.html"><img src="../Images/login page/instagram-logo.png" alt="Logo" title="Instagram"></a>
+        </div>
+        <div class="side_menus item1">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <div class="side_menus item2" onclick="searchBox_show()" >
+            <p class="search_cls"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></p>
+        </div>
+        <div class="side_menus item3">
+            <a href="explore.html"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+        </div>
+        <div class="side_menus item4">
+            <a href="reels.html"><img src="../Images/home page/instagram-reel-1.png" alt="reels icon"><span>Reels</span></a>
+        </div>
+        <div class="side_menus item5">
+            <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i><span>Messages</span></a>
+        </div>
+        <div class="side_menus item6" onclick="notification()">
+            <p class="search_cls"><i class="fa-regular fa-heart"></i><span>Notifications</span></p>
+        </div>
+        <div class="side_menus item7" onclick="create()">
+            <p class="search_cls"><i class="fa-regular fa-square-plus"></i><span>Create</span></p>
+        </div>
+        <div class="side_menus item8">
+            <a href="profile.html"><img src="../Images/home page/profile id/my id.jpg" alt="profile logo"><span>Profile</span></a>
+        </div>
+        <div class="side_menus item9">
+            <a href=""><i class="fa-brands fa-threads"></i><span>Threads</span></a>
+        </div>
+        <div class="side_menus item10" onclick="more()">
+            <p class="search_cls"><i class="fa-solid fa-bars"></i><span>More</span></p>
+        </div>
+    </div>
+
+    <!--****************** side bar content **************-->
+    <div class="search_click_bar" id="search_click_bar">
+        <div class="searchcontent one_search">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search" id="search_box_side"><button class="span_search_icon" onclick="searchBox()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchcontent two_search">
+            <div class="search_txts">
+                <h4>Recent</h4>
+                <a href="">Clear all</a>
+            </div>
+            <div class="search_profile_name">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--****************** Notifications part ********************-->
+    <div class="Notifications" id="notifications">
+        <div class="Notifications_head">
+            Notifications
+        </div>
+        <div class="Notifications_follow">
+            <div class="Notifications_img">
+                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                <div class="Notifications_img_txt">
+                    <h4>Follow requests</h4>
+                    <p>soul1542 + 42 others</p>
+                </div>
+                
+            </div>
+            <div class="Notifications_icon">
+                <p>a</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="Notifications_today">
+            <h3>Today</h3>
+            <div class="Notifications_today_profile">
+                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                <div class="Notifications_today_text">
+                    <p>soul29809</p><span>requested to <br> follow you .</span> <span style="color: #7c7c7c;">1d</span>
+                </div>
+                <div class="Notifications_today_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="Notifications_week">
+            <h3>This week</h3>
+            <div class="Notifications_week_profile">
+                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>barathsj777</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+            <div class="Notifications_week_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>satha_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <img src="../Images/Explore/img11.png" alt="" class="Notifications_week_text_img">
+            </div>
+            <div class="Notifications_week_profile2">
+                <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>_boo_</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Notifications_month">
+            <h3>This month</h3>
+            <div class="Notifications_month_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_month_text">
+                    <p>vijay_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1m</span>
+                </div>
+                <img src="../Images/Explore/img12.png" alt="" class="Notifications_month_text_img">
+            </div>
+        </div>
+    </div>
+
+    <!--****************** create ********************-->
+    <div class="create_bg" id="create_bg">
+        <i class="fa-solid fa-xmark" onclick="create_bg_x()"></i>
+    <div class="create">
+        <div class="create_head">
+            Create new post
+        </div>
+        <div class="create_content">
+            <img src="../Images/home page/craete_img.png" alt="">
+            <p>Drag photos and videos here</p>
+
+            <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)"/>
+            <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Select from computer"/>
+            
+        </div>
+        </div>
+    </div>
+
+    <!--****************** more ********************-->
+    <div class="more" id="more">
+        <div class="more1">
+            <div class="more_span1 more_hover">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+            </div>
+            <div class="more_span2 more_hover">
+                <i class="fa-solid fa-chart-line"></i><span>Your activity</span>
+            </div>
+            <div class="more_span3 more_hover">
+                <i class="fa-regular fa-bookmark"></i><span>Saved</span>
+            </div>
+            <div class="more_span4 more_hover">
+                <i class="fa-regular fa-sun"></i><span>Switch appearance</span>
+            </div>
+            <div class="more_span5 more_hover">
+                <i class="fa-solid fa-circle-exclamation"></i><span>Report a problem</span>
+            </div>
+        </div>
+        <div class="more2">
+            <div class="more2_span1 more_hover">
+                <span>Switch accounts</span>
+            </div>
+            <div class="more2_span2 more_hover">
+                <span>Log out</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--****************** profile ********************-->
+    <div class="profiles">
+        <div class="profiles_notes">
+            <div class="profiles_notes1">
+                <img src="../Images/home page/profile id/my id.jpg" alt="">
+                <div class="note">
+                    <img src="../Images/chat/notes_img.png" alt="">
+                    <input type="text" placeholder="Note...">
+                    <div class="profiles_icon">
+                        <i class="fa-solid fa-sort-up"></i>
+                        <i class="fa-solid fa-sort-down profiles_icon_down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profiles_details">
+            <div class="profiles_details_name">
+                <p>dhinesh_143_17</p>
+                <button>Edit profile</button>
+                <button>View archive</button>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="profiles_details_follows">
+                <p>2</p><span>posts</span>
+                <p>278</p><span>follwers</span>
+                <p>83</p><span>follwing</span>
+            </div>
+            <div class="profiles_details_extra_name">
+                乂❤D̷̨̥̥̥͖̞͐ͮ̄M͚͚̻͂̇͜͟͟♡¸.•*🅳🅷🅸🅽🅴🆂🅷
+            </div>
+        </div>
+
+        <div class="profiles_heilights">
+            <img src="../Images/home page/profile_heilight_img.jpg" alt=""><span>tharithiram</span>
+            <img src="../Images/home page/profile_heilight_img.jpg" alt=""><span style="margin-left: 7%;">💖Thangachi...</span>
+            <img src="../Images/home page/profile_heilight_img.jpg" alt=""><span style="margin-left: 16%;">Udanpirabu.......</span>
+            <img src="../Images/home page/profile_heilight_img.jpg" alt=""><span style="margin-left: 24%;">mapulai</span>
+            <img src="../Images/home page/profile_heilight_img._plus.png" alt=""><span style="margin-left: 33%;">New</span>
+        </div>
+
+        <hr style="margin-top: 4%;margin-left: 12%;margin-right: 30%;">
+
+        <div class="profiles_posts">
+            <div class="profiles_posts_list">
+                <div class="profiles_posts_list1">
+                    <i class="fa-solid fa-table-cells"></i><span>POSTS</span>
+                </div>
+                <div class="profiles_posts_list2">
+                    <i class="fa-solid fa-clapperboard"></i><span>REELS</span>
+                </div>
+                <div class="profiles_posts_list3">
+                    <i class="fa-regular fa-bookmark"></i><span>SAVED</span>
+                </div>
+            </div>
+            <div class="profiles_posts_img">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../Script/script.js"></script>
+    
+
+</body>
+</html>

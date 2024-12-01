@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="icon" type="image/png" href="../Images/login page/insta-fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram</title>
+</head>
+<body id="body_x" style="overflow-y: scroll; overflow-x: hidden;">
+
+    <div class="side_menu">
+        <div class="side_logo">
+            <a href="index.html"><img src="../Images/login page/instagram-logo.png" alt="Logo" title="Instagram"></a>
+        </div>
+        <div class="side_menus item1">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <div class="side_menus item2" onclick="searchBox_show()" >
+            <p class="search_cls"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></p>
+        </div>
+        <div class="side_menus item3">
+            <a href="explore.html"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+        </div>
+        <div class="side_menus item4">
+            <a href="reels.html"><img src="../Images/home page/instagram-reel-1.png" alt="reels icon"><span>Reels</span></a>
+        </div>
+        <div class="side_menus item5">
+            <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i><span>Messages</span></a>
+        </div>
+        <div class="side_menus item6" onclick="notification()">
+            <p class="search_cls"><i class="fa-regular fa-heart"></i><span>Notifications</span></p>
+        </div>
+        <div class="side_menus item7" onclick="create()">
+            <p class="search_cls"><i class="fa-regular fa-square-plus"></i><span>Create</span></p>
+        </div>
+        <div class="side_menus item8">
+            <a href="profile.html"><img src="../Images/home page/profile id/my id.jpg" alt="profile logo"><span>Profile</span></a>
+        </div>
+        <div class="side_menus item9">
+            <a href=""><i class="fa-brands fa-threads"></i><span>Threads</span></a>
+        </div>
+        <div class="side_menus item10" onclick="more()">
+            <p class="search_cls"><i class="fa-solid fa-bars"></i><span>More</span></p>
+        </div>
+    </div>
+
+    <!--****************** side bar content **************-->
+    <div class="search_click_bar" id="search_click_bars">
+        <div class="searchcontent one_search">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search" id="search_box_side"><button class="span_search_icon" onclick="searchBox()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchcontent two_search">
+            <div class="search_txts">
+                <h4>Recent</h4>
+                <a href="">Clear all</a>
+            </div>
+            <div class="search_profile_name">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--****************** Notifications part ********************-->
+    <div class="Notifications" id="notifications">
+        <div class="Notifications_head">
+            Notifications
+        </div>
+        <div class="Notifications_follow">
+            <div class="Notifications_img">
+                <img src="../Images/Explore/message_img/img1_comment3.jpg" alt="">
+                <div class="Notifications_img_txt">
+                    <h4>Follow requests</h4>
+                    <p>soul1542 + 42 others</p>
+                </div>
+                
+            </div>
+            <div class="Notifications_icon">
+                <p>a</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="Notifications_today">
+            <h3>Today</h3>
+            <div class="Notifications_today_profile">
+                <img src="../Images/Explore/message_img/img1_comment5.jpg" alt="">
+                <div class="Notifications_today_text">
+                    <p>soul29809</p><span>requested to <br> follow you .</span> <span style="color: #7c7c7c;">1d</span>
+                </div>
+                <div class="Notifications_today_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="Notifications_week">
+            <h3>This week</h3>
+            <div class="Notifications_week_profile">
+                <img src="../Images/Explore/message_img/img1_comment8.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>barathsj777</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+            <div class="Notifications_week_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>satha_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <img src="../Images/Explore/img11.png" alt="" class="Notifications_week_text_img">
+            </div>
+            <div class="Notifications_week_profile2">
+                <img src="../Images/Explore/message_img/img1_comment9.jpg" alt="">
+                <div class="Notifications_week_text">
+                    <p>_boo_</p><span>requested to <br> follow you</span> <span style="color: #7c7c7c;">1w</span>
+                </div>
+                <div class="Notifications_week_profile_btn">
+                    <button>Confirm</button>
+                    <button class="del">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Notifications_month">
+            <h3>This month</h3>
+            <div class="Notifications_month_profile1">
+                <img src="../Images/Explore/message_img/img1_comment1.jpg" alt="">
+                <div class="Notifications_month_text">
+                    <p>vijay_❤️</p><span>liked your story</span> <span style="color: #7c7c7c;">1m</span>
+                </div>
+                <img src="../Images/Explore/img12.png" alt="" class="Notifications_month_text_img">
+            </div>
+        </div>
+    </div>
+
+    <!--****************** create ********************-->
+    <div class="create_bg" id="create_bg">
+        <i class="fa-solid fa-xmark" onclick="create_bg_x()"></i>
+    <div class="create">
+        <div class="create_head">
+            Create new post
+        </div>
+        <div class="create_content">
+            <img src="../Images/home page/craete_img.png" alt="">
+            <p>Drag photos and videos here</p>
+
+            <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)"/>
+            <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Select from computer"/>
+            
+        </div>
+        </div>
+    </div>
+    <!--****************** more ********************-->
+    <div class="more" id="more">
+        <div class="more1">
+            <div class="more_span1 more_hover">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+            </div>
+            <div class="more_span2 more_hover">
+                <i class="fa-solid fa-chart-line"></i><span>Your activity</span>
+            </div>
+            <div class="more_span3 more_hover">
+                <i class="fa-regular fa-bookmark"></i><span>Saved</span>
+            </div>
+            <div class="more_span4 more_hover">
+                <i class="fa-regular fa-sun"></i><span>Switch appearance</span>
+            </div>
+            <div class="more_span5 more_hover">
+                <i class="fa-solid fa-circle-exclamation"></i><span>Report a problem</span>
+            </div>
+        </div>
+        <div class="more2">
+            <div class="more2_span1 more_hover">
+                <span>Switch accounts</span>
+            </div>
+            <div class="more2_span2 more_hover">
+                <span>Log out</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--****************** story part ********************-->
+
+    <div class="storys">
+        <!-- <div class="scroll left"><i class="fa-solid fa-angle-left"></i></div> -->
+        <div class="story_part">
+            <!-- <div class="story person1">
+                <img src="../Images/login page/insta-fav.ico" alt="profile img"><i class="fa-solid fa-circle-plus"></i>
+                <span>Your Story</span>
+            </div> -->
+            <div class="story person2">
+                <a href="https://www.instagram.com/reel/DBBOyITSPDl/?utm_source=ig_web_copy_link"><img src="../Images/home page/profile id/dinesh id.jpg" alt="profile img"></a>
+                <a href="https://www.instagram.com/reel/DBBOyITSPDl/?utm_source=ig_web_copy_link"><span>i_am_blacky_y</span></a>
+            </div>
+            <div class="story person3">
+                <a href=""><img src="../Images/home page/profile id/praveen id.png" alt="profile img"></a>
+                <a href=""><span>sm__praveen...</span></a>
+            </div>
+            <div class="story person4">
+                <a href=""><img src="../Images/home page/profile id/hari id.png" alt="profile img"></a>
+                <a href=""><span>hari_army_007</span></a>
+            </div>
+            <div class="story person5">
+                <a href=""><img src="../Images/home page/profile id/partha id.png" alt="profile img"></a>
+                <a href=""><span>_.parthzzz._</span></a>
+            </div>
+            <div class="story person6">
+                <a href=""><img src="../Images/home page/profile id/ragu id.png" alt="profile img"></a>
+                <a href=""><span>vox_alone</span></a>
+            </div>
+            <div class="story person7">
+                <a href=""><img src="../Images/home page/profile id/sarith id.png" alt="profile img"></a>
+                <a href=""><span>lovely_boy...</span></a>
+            </div>
+            <div class="story person8">
+                <a href=""><img src="../Images/home page/profile id/sundharavel id.jpg" alt="profile img"></a>
+                <a href=""><span>_sundera_pa...</span></a>
+            </div>
+            <div class="story person9">
+                <a href=""><img src="../Images/home page/profile id/sakthi id.png" alt="profile img"></a>
+                <a href=""><span>its_sakthiii_</span></a>
+            </div>
+        </div>
+        <div class="scroll right"><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+
+    <!--****************** story part End ********************-->
+
+
+    <!--****************** post person ********************-->
+    <div class="post-content" id="post-content">
+        <div class="emoji" id="emoji">
+            <p>Most popular</p>
+            <div class="emojis_one">
+                <div class="emojis_one_one">
+                    <div>&#128512;</div>
+                    <div>&#128513;</div>
+                    <div>&#128514;</div>
+                    <div>&#128515;</div>
+                    <div>&#128516;</div>
+                    <div>&#128517;</div>
+                    <div>&#128518;</div>
+                </div>
+                <div class="emojis_one_two">
+                    <div>&#128519;</div>
+                    <div>&#128520;</div>
+                    <div>&#128521;</div>
+                    <div>&#128522;</div>
+                    <div>&#128523;</div>
+                    <div>&#128524;</div>
+                    <div>&#128525;</div>
+                </div>
+            </div>                
+                <p>Activities</p>
+            <div class="emojis_two">
+                <div class="emojis_two_one">
+                    <div>&#128526;</div>
+                    <div>&#128527;</div>
+                    <div>&#128528;</div>
+                    <div>&#128529;</div>
+                    <div>&#128530;</div>
+                    <div>&#128531;</div>
+                    <div>&#128532;</div>
+                </div>
+                <div class="emojis_two_two">
+                    <div>&#128533;</div>
+                    <div>&#128534;</div>
+                    <div>&#128535;</div>
+                    <div>&#128536;</div>
+                    <div>&#128537;</div>
+                    <div>&#128538;</div>
+                    <div>&#128539;</div>
+                </div>
+                <div class="emojis_two_three">
+                    <div>&#128540;</div>
+                    <div>&#128541;</div>
+                    <div>&#128542;</div>
+                    <div>&#128543;</div>
+                    <div>&#128544;</div>
+                    <div>&#128545;</div>
+                    <div>&#128546;</div>
+                </div>
+                <div class="emojis_two_four">
+                    <div>&#128547;</div>
+                    <div>&#128548;</div>
+                    <div>&#128549;</div>
+                    <div>&#128550;</div>
+                    <div>&#128551;</div>
+                    <div>&#128552;</div>
+                    <div>&#128553;</div>
+                </div>
+            </div>
+        </div>
+        <div class="post1" id="post1">
+            <div class="header_part">
+                <div class="hearder_part_text">
+                    <img src="../Images/home page/profile id/partha id.png" alt="logo">
+                    <b>_.parthzzz._</b> <span>2d</span>
+                    <p>Original audio</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <img src="../Images/home page/profile id/partha id.png" alt="logo" class="post_partha">
+            <div class="likes_part">
+                <div class="like_icons">
+                    <div class="link_icons_one">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="link_icons_two">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <p>67 likes</p>
+                <div class="tag">
+                    <a href="">_.parthzzz._</a><span>தீதும் நன்றும் பிறர் தர வாரா 🕊️
+                        மகிழ்வித்து மகிழ் 😊
+                        தனிமை என்பது பேரின்பம் 🍃🥀</span>
+                </div>
+                <br>
+                <a href="" class="tag_view_comment">View all 7 comments</a>
+                <div class="part1_search">
+                    <input type="search" placeholder="Add a comment..."><button onclick="emoji()"><i class="fa-regular fa-face-smile"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 34%;margin-top: 1%;margin-left: 30%; color: #7c7c7c;">
+
+        <div class="emojis" id="emojis">
+            <p>Most popular</p>
+            <div class="emojis_one">
+                <div class="emojis_one_one">
+                    <div>&#128512;</div>
+                    <div>&#128513;</div>
+                    <div>&#128514;</div>
+                    <div>&#128515;</div>
+                    <div>&#128516;</div>
+                    <div>&#128517;</div>
+                    <div>&#128518;</div>
+                </div>
+                <div class="emojis_one_two">
+                    <div>&#128519;</div>
+                    <div>&#128520;</div>
+                    <div>&#128521;</div>
+                    <div>&#128522;</div>
+                    <div>&#128523;</div>
+                    <div>&#128524;</div>
+                    <div>&#128525;</div>
+                </div>
+            </div>                
+                <p>Activities</p>
+            <div class="emojis_two">
+                <div class="emojis_two_one">
+                    <div>&#128526;</div>
+                    <div>&#128527;</div>
+                    <div>&#128528;</div>
+                    <div>&#128529;</div>
+                    <div>&#128530;</div>
+                    <div>&#128531;</div>
+                    <div>&#128532;</div>
+                </div>
+                <div class="emojis_two_two">
+                    <div>&#128533;</div>
+                    <div>&#128534;</div>
+                    <div>&#128535;</div>
+                    <div>&#128536;</div>
+                    <div>&#128537;</div>
+                    <div>&#128538;</div>
+                    <div>&#128539;</div>
+                </div>
+                <div class="emojis_two_three">
+                    <div>&#128540;</div>
+                    <div>&#128541;</div>
+                    <div>&#128542;</div>
+                    <div>&#128543;</div>
+                    <div>&#128544;</div>
+                    <div>&#128545;</div>
+                    <div>&#128546;</div>
+                </div>
+                <div class="emojis_two_four">
+                    <div>&#128547;</div>
+                    <div>&#128548;</div>
+                    <div>&#128549;</div>
+                    <div>&#128550;</div>
+                    <div>&#128551;</div>
+                    <div>&#128552;</div>
+                    <div>&#128553;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tick_img">
+            <img src="../Images/home page/illo-confirm-refresh-light.png" alt="">
+            <h3>You're all caught up</h3>
+            <p>You've seen all new posts from the past 3 days.</p>
+            <a href="">View older posts</a>
+        </div>
+
+        <hr style="width: 34%;margin-top: 3%;margin-left: 30%; color: #7c7c7c;">
+
+        <h2 style="margin-left: 30%;margin-top: 2%;font-weight: normal;">Suggested Posts</h2>
+
+        <div class="post2" id="post2">
+            <div class="header_part">
+                <div class="hearder_part_text">
+                    <img src="../Images/home page/profile id/partha id.png" alt="logo">
+                    <b style="margin-left: -30%;">resh_beatz</b> <span style="margin-left: -93%;margin-top: .8%;">•</span> <span style="margin-left: -89%;">10w</span> <span style="margin-left: -74%;margin-top: .8%;">•</span> <span style="color: #00aaff; font-weight: bold;margin-left: -70%;">Follow</span>
+                    <p style="margin-top: -6%;margin-left: 20%; color: #444343;">broken__heart__e_fx • Original audio</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <!-- <img src="../Images/home page/profile id/partha id.png" alt="logo" class="post_partha"> -->
+            <video src="../videos/reels/reels1.mp4" autoplay class="post_partha"></video><button onclick="mute()" id="button" style="margin-left: 95%; background-color: #e7e3e3;border: none;width: 30px;height: 30px;border-radius: 50%;"><i class="fa-solid fa-volume-xmark"></i> </button>
+            <div class="likes_part">
+                <div class="like_icons">
+                    <div class="link_icons_one">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="link_icons_two">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <p>10,545 likes</p>
+                <div class="tag">
+                    <a href="">resh_beatz</a><span>Tag your caring partner ❤️💫</span>
+                </div>
+                <br>
+                <a href="" class="tag_view_comment">View all 7 comments</a>
+                <div class="part1_search">
+                    <input type="search" placeholder="Add a comment..."><button onclick="emojis()"><i class="fa-regular fa-face-smile"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="emojione" id="emojione">
+            <p>Most popular</p>
+            <div class="emojis_one">
+                <div class="emojis_one_one">
+                    <div>&#128512;</div>
+                    <div>&#128513;</div>
+                    <div>&#128514;</div>
+                    <div>&#128515;</div>
+                    <div>&#128516;</div>
+                    <div>&#128517;</div>
+                    <div>&#128518;</div>
+                </div>
+                <div class="emojis_one_two">
+                    <div>&#128519;</div>
+                    <div>&#128520;</div>
+                    <div>&#128521;</div>
+                    <div>&#128522;</div>
+                    <div>&#128523;</div>
+                    <div>&#128524;</div>
+                    <div>&#128525;</div>
+                </div>
+            </div>                
+                <p>Activities</p>
+            <div class="emojis_two">
+                <div class="emojis_two_one">
+                    <div>&#128526;</div>
+                    <div>&#128527;</div>
+                    <div>&#128528;</div>
+                    <div>&#128529;</div>
+                    <div>&#128530;</div>
+                    <div>&#128531;</div>
+                    <div>&#128532;</div>
+                </div>
+                <div class="emojis_two_two">
+                    <div>&#128533;</div>
+                    <div>&#128534;</div>
+                    <div>&#128535;</div>
+                    <div>&#128536;</div>
+                    <div>&#128537;</div>
+                    <div>&#128538;</div>
+                    <div>&#128539;</div>
+                </div>
+                <div class="emojis_two_three">
+                    <div>&#128540;</div>
+                    <div>&#128541;</div>
+                    <div>&#128542;</div>
+                    <div>&#128543;</div>
+                    <div>&#128544;</div>
+                    <div>&#128545;</div>
+                    <div>&#128546;</div>
+                </div>
+                <div class="emojis_two_four">
+                    <div>&#128547;</div>
+                    <div>&#128548;</div>
+                    <div>&#128549;</div>
+                    <div>&#128550;</div>
+                    <div>&#128551;</div>
+                    <div>&#128552;</div>
+                    <div>&#128553;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post3" id="post3">
+            <div class="header_part">
+                <div class="hearder_part_text">
+                    <img src="../Images/home page/profile id/partha id.png" alt="logo">
+                    <b style="margin-left: -5%;">mr_joker.7070</b> <span style="margin-left: 20%;margin-top: .8%;">•</span> <span style="margin-left: 30%;">6w</span> <span style="margin-left: 55%;margin-top: .8%;">•</span> <span style="color: #00aaff; font-weight: bold;margin-left: 65%;">Follow</span>
+                    <p style="margin-top: -15%;margin-left: 45%; color: #444343;"> Original audio</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <!-- <img src="../Images/home page/profile id/partha id.png" alt="logo" class="post_partha"> -->
+            <video src="../videos/reels/reels2.mp4" autoplay class="post_partha" id="videos"></video><button onclick="mutes()" id="buttons" style="margin-left: 95%; background-color: #e7e3e3;border: none;width: 30px;height: 30px;border-radius: 50%;"><i class="fa-solid fa-volume-xmark"></i> </button>
+            <div class="likes_part">
+                <div class="like_icons">
+                    <div class="link_icons_one">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="link_icons_two">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <p>3,728 likes</p>
+                <div class="tag">
+                    <a href="">mr_joker.7070</a><span>Tag ❤️... </span>
+                </div>
+                <br>
+                <a href="" class="tag_view_comment">View all 7 comments</a>
+                <div class="part1_search">
+                    <input type="search" placeholder="Add a comment..."><button onclick="emojione()"><i class="fa-regular fa-face-smile"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="emojisone" id="emojisone">
+            <p>Most popular</p>
+            <div class="emojis_one">
+                <div class="emojis_one_one">
+                    <div>&#128512;</div>
+                    <div>&#128513;</div>
+                    <div>&#128514;</div>
+                    <div>&#128515;</div>
+                    <div>&#128516;</div>
+                    <div>&#128517;</div>
+                    <div>&#128518;</div>
+                </div>
+                <div class="emojis_one_two">
+                    <div>&#128519;</div>
+                    <div>&#128520;</div>
+                    <div>&#128521;</div>
+                    <div>&#128522;</div>
+                    <div>&#128523;</div>
+                    <div>&#128524;</div>
+                    <div>&#128525;</div>
+                </div>
+            </div>                
+                <p>Activities</p>
+            <div class="emojis_two">
+                <div class="emojis_two_one">
+                    <div>&#128526;</div>
+                    <div>&#128527;</div>
+                    <div>&#128528;</div>
+                    <div>&#128529;</div>
+                    <div>&#128530;</div>
+                    <div>&#128531;</div>
+                    <div>&#128532;</div>
+                </div>
+                <div class="emojis_two_two">
+                    <div>&#128533;</div>
+                    <div>&#128534;</div>
+                    <div>&#128535;</div>
+                    <div>&#128536;</div>
+                    <div>&#128537;</div>
+                    <div>&#128538;</div>
+                    <div>&#128539;</div>
+                </div>
+                <div class="emojis_two_three">
+                    <div>&#128540;</div>
+                    <div>&#128541;</div>
+                    <div>&#128542;</div>
+                    <div>&#128543;</div>
+                    <div>&#128544;</div>
+                    <div>&#128545;</div>
+                    <div>&#128546;</div>
+                </div>
+                <div class="emojis_two_four">
+                    <div>&#128547;</div>
+                    <div>&#128548;</div>
+                    <div>&#128549;</div>
+                    <div>&#128550;</div>
+                    <div>&#128551;</div>
+                    <div>&#128552;</div>
+                    <div>&#128553;</div>
+                </div>
+            </div>
+        </div>
+        <div class="post4">
+            <div class="header_part">
+                <div class="hearder_part_text">
+                    <img src="../Images/home page/profile id/partha id.png" alt="logo">
+                    <b style="margin-left: -5%;">mis_devil_queen_811</b> <span style="margin-left: 70%;margin-top: .8%;">•</span> <span style="margin-left: 80%;">6w</span> <span style="margin-left: 105%;margin-top: .8%;">•</span> <span style="color: #00aaff; font-weight: bold;margin-left: 115%;">Follow</span>
+                    <p style="margin-top: -15%;margin-left: 45%; color: #444343;"> Original audio</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <!-- <img src="../Images/home page/profile id/partha id.png" alt="logo" class="post_partha"> -->
+            <video src="../videos/reels/reels3.mp4" autoplay class="post_partha" id="videoone"></video><button onclick="muteone()" id="buttonone" style="margin-left: 95%; background-color: #e7e3e3;border: none;width: 30px;height: 30px;border-radius: 50%;"><i class="fa-solid fa-volume-xmark"></i> </button>
+            <div class="likes_part">
+                <div class="like_icons">
+                    <div class="link_icons_one">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="link_icons_two">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <p>7,171 likes</p>
+                <div class="tag">
+                    <a href="">mis_devil_queen_811</a><span>❤️✨ Pattu ❤️✨...  </span>
+                </div>
+                <br>
+                <a href="" class="tag_view_comment">View all 7 comments</a>
+                <div class="part1_search">
+                    <input type="search" placeholder="Add a comment..."><button onclick="emojisone()"><i class="fa-regular fa-face-smile"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="post5"></div>
+    </div>
+
+
+
+
+
+    <script src="../Script/script.js"></script>
+    
+
+</body>
+</html>
